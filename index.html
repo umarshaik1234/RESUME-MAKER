@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="app">
+  <h1>AI Resume Builder</h1>
+  <p class="subtitle">Create ATS-Friendly Resume Instantly</p>
+
+  <div class="container">
+
+    <!-- FORM -->
+    <div class="form">
+      <input id="name" placeholder="Full Name">
+      <input id="role" placeholder="Job Role">
+
+      <textarea id="objective" placeholder="Career Objective"></textarea>
+      <textarea id="education" placeholder="Education (each on new line)"></textarea>
+      <textarea id="projects" placeholder="Projects (each on new line)"></textarea>
+      <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+      <button onclick="generateResume()">Generate Resume</button>
+      <button class="download" onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <!-- RESUME PREVIEW -->
+    <div class="resume" id="resume">
+      <h2 id="r-name"></h2>
+      <p id="r-role" class="role"></p>
+
+      <h3>OBJECTIVE</h3>
+      <p id="r-objective"></p>
+
+      <h3>EDUCATION</h3>
+      <ul id="r-education"></ul>
+
+      <h3>PROJECTS</h3>
+      <ul id="r-projects"></ul>
+
+      <h3>SKILLS</h3>
+      <p id="r-skills"></p>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.form {
+  width: 40%;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.form textarea {
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #00c6ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.download {
+  background: #7CFF00;
+}
+
+/* Resume Preview (ATS Friendly) */
+.resume {
+  width: 60%;
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.resume h2 {
+  margin-bottom: 5px;
+}
+
+.role {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.resume h3 {
+  margin-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.resume ul {
+  padding-left: 18px;
+}
