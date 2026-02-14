@@ -1,2 +1,2 @@
 # RESUME-MAKER
-Code if html,css and javascript to make a resume maker ats friendly
+Code of html,css and javascript to make a resume maker ats friendly
